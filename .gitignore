@@ -1,0 +1,10 @@
+target/
+*.log
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+Thumbs.db
+**/docker-compose.override.yml
