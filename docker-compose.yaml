@@ -15,11 +15,11 @@ services:
       - backend
 
   authuser-db:
-    image: postgres:16
+    image: postgres
     container_name: authuser-db
     restart: always
     volumes:
-      - authuser-db-data:/var/lib/postgresql/data
+      - authuser-db-data:/var/lib/postgresql/data/pgdata
     environment:
       POSTGRES_DB: authuserdb
       POSTGRES_USER: userdb
@@ -46,11 +46,11 @@ services:
     networks:
       - backend
   course-db:
-    image: postgres:16
+    image: postgres
     restart: always
     container_name: course-db
     volumes:
-      - course-db-data:/var/lib/postgresql/data
+      - course-db-data:/var/lib/postgresql/data/pgdata
     environment:
       POSTGRES_DB: coursedb
       POSTGRES_USER: coursedb

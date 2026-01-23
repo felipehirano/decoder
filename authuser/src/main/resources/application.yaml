@@ -16,4 +16,4 @@ spring:
         show-sql: true
   flyway:
     enabled: true
-    locations: classpath:authuser-db/migration
+    locations: classpath:db/migration
